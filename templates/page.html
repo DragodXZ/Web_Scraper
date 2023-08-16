@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      h1 {
+        text-align: center;
+        font-family: "Poiret One", cursive;
+        font-size: 3em;
+      }
+      .result{
+        text-align: center;
+        font-family: "Poiret One", cursive;
+        font-weight: bold;
+      }
+      h2{
+        text-align: center;
+        font-family: "Poiret One", cursive;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon Aggregator</title>
+  </head>
+  <body><center>
+    <h1>Product Aggregator</h1>
+    <form method="post">
+      <input type="search" name="searchkey"/>
+      <input type="submit" id="button"/>
+    </form>
+    <h2>Results</h2>
+    <div class="result">
+        {{ data_var|safe }}
+    </div>
+  </body></center>
+</html>
